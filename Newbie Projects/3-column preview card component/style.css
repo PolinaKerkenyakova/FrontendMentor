@@ -1,0 +1,154 @@
+/* Base Setup */
+
+/* Variables */
+:root {
+  /* Colors */
+  --bright-orange-color: hsl(31, 77%, 52%);
+  --dark-cyan-color-1: hsl(184, 100%, 22%);
+  --dark-cyan-color-2: hsl(179, 100%, 13%);
+
+  --transperant-white-color: hsla(0, 0%, 100%, 0.75); /*for paragraphs*/
+  --light-grey-color: hsl(0, 0%, 95%); /*for background, headings, buttons*/
+
+  /* Fonts */
+  --font-primary: "Lexend Deca", sans-serif;
+  --font-display: "Big Shoulders Display", cursive;
+
+  /* --bp-mobile: 37.5rem;
+  --bp-desktop: 144rem; */
+}
+
+/* Bsic Setup */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  background-color: var(--light-grey-color);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Typography */
+
+.heading-2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--light-grey-color);
+  margin: 2rem 0;
+}
+
+p {
+  color: var(--transperant-white-color);
+}
+
+/* Car Group Styling */
+.cars {
+  height: 70vh;
+  width: 60vw;
+  display: flex;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+/* Card Styling */
+
+.car-item {
+  height: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-item--1 {
+  background-color: var(--bright-orange-color);
+}
+
+.car-item--2 {
+  background-color: var(--dark-cyan-color-1);
+}
+
+.car-item--3 {
+  background-color: var(--dark-cyan-color-2);
+}
+
+.btn {
+  padding: 1.2rem 3rem;
+  border: 1.5px solid var(--light-grey-color);
+  border-radius: 30rem;
+  background-color: var(--light-grey-color);
+  width: max-content;
+  margin-top: auto;
+}
+
+.btn:active,
+.btn:hover {
+  color: var(--light-grey-color);
+}
+
+.btn--1 {
+  color: var(--bright-orange-color);
+}
+
+.btn--1:hover,
+.btn--1:active {
+  background-color: var(--bright-orange-color);
+}
+
+.btn--2 {
+  color: var(--dark-cyan-color-1);
+}
+
+.btn--2:hover,
+.btn--2:active {
+  background-color: var(--dark-cyan-color-1);
+}
+
+.btn--3 {
+  color: var(--dark-cyan-color-1);
+}
+
+.btn--3:hover,
+.btn--3:active {
+  background-color: var(--dark-cyan-color-2);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container {
+    margin: 6rem 0;
+    height: 100%;
+  }
+
+  .cars {
+    height: 100%;
+    width: 90vw;
+    flex-direction: column;
+  }
+
+  .car-item {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-top: 3rem;
+  }
+}
