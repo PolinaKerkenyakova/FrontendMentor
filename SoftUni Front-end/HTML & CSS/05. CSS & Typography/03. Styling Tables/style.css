@@ -1,0 +1,15 @@
+tbody tr:nth-child(odd) {
+    background: rgb(241, 241, 241);
+}
+
+body table tbody tr:hover{
+    color:  rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+table th,
+table td{
+    border-width: 1px;
+    border-color: rgb(221, 221, 221);
+    border-style: solid;
+}

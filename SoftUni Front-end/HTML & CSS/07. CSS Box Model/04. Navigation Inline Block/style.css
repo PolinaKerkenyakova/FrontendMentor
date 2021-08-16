@@ -1,0 +1,43 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid #000;
+}
+
+p.title {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+nav {
+    display: inline-block;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #6bb14f;
+}
+
+main {
+    margin-top: 40px;
+}
+
+h1 {
+    font-weight: 400;
+    font-family: serif;
+}

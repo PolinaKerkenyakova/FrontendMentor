@@ -1,0 +1,24 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+article {
+  margin: 70px 50px;
+}
+
+p {
+  margin: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+a.green {
+  background-color: #008600;
+}
+
+a.orange {
+  background-color: #ff9100;
+}
