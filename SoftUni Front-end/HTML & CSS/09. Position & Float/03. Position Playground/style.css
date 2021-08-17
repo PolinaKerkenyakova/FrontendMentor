@@ -1,0 +1,51 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* .viewport {
+  height: 100vh;
+} */
+
+.viewport {
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blue-green {
+  background: linear-gradient(to right, #1f6aa2, #47cca6);
+}
+
+.pink-orange {
+  background: linear-gradient(to right, #af3e77, #d3851b);
+}
+
+img {
+  border-radius: 6px;
+  box-shadow: 2px 3px 20px 1px #333;
+  max-height: 450px;
+  max-width: 450px;
+}
+
+
+.icon {
+    color: #fff;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
