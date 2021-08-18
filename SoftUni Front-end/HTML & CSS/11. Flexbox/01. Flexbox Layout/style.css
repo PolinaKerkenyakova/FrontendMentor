@@ -1,0 +1,43 @@
+body {
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header,
+main,
+aside,
+footer {
+  background-color: #fff;
+  margin: 10px;
+  box-shadow: 1px 0px 6px 1px #cecece;
+  border-radius: 4px;
+}
+
+main, aside {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 200px;
+}
+
+header {
+  flex: 1 1 100%;
+  padding: 40px 20px;
+}
+
+main {
+  flex: 3 1 auto;
+}
+
+aside {
+  flex: 1 1 auto;
+}
+
+footer {
+  flex: 1 1 100%;
+  padding: 40px 20px;
+}
