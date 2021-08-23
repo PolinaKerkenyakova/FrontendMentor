@@ -1,0 +1,11 @@
+{
+  "name": "trillo-website",
+  "version": "1.0.0",
+  "description": "Trillo App",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch sass/main.scss:css/style.css"
+  },
+  "author": "Polina Kerkenyakova",
+  "license": "ISC"
+}
