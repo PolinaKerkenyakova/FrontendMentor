@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3;
+}
+
+.card {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.join-us {
+  background-color: #fff;
+  padding: 30px;
+  color: hsl(218, 22%, 67%);
+}
+
+.about {
+  display: flex;
+  color: #fff;
+}
+
+.subscribtion-plan {
+  background-color: #2bb3b1;
+  flex-basis: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-us {
+  background-color: #4abebd;
+  flex-basis: 50%;
+  padding: 30px;
+}
+
+.why-us li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.primary-text {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.join-us .secondary-text {
+  color: hsl(71, 73%, 54%);
+}
+
+.secondary-text {
+  font-size: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subscribtion-plan > p:nth-child(2) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.subscribtion-plan > p:nth-child(3) {
+  margin-bottom: auto;
+  padding-top: 8px;
+}
+
+.subscribtion-plan > p > span {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 6px;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  align-self: flex-end;
+  color: #fff;
+}
+
+@media all and (max-width: 600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 80px auto;
+
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+     margin-top: 30px;
+    }
+}
