@@ -53,6 +53,11 @@ p {
   max-width: 32rem;
   margin: 2.5rem 0;
 }
+@media only screen and (min-width: 601px) {
+  .card {
+    margin: 2.5rem 2rem;
+  }
+}
 .card__wrapper {
   padding: 2.5rem;
 }
@@ -105,8 +110,37 @@ p {
 }
 
 .cards {
-  width: fit-content;
-  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+@media only screen and (min-width: 601px) {
+  .cards {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .cards {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+}
+.cards__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 900px) {
+  .cards__wrapper {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .cards__wrapper {
+    flex-direction: column;
+  }
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
