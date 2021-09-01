@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: $default-font;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.primary-heading {
+  color: $very-dark-magenta;
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-align: center;
+  line-height: 0.9;
+
+  @include respond(tab-land) {
+    font-size: 4.2rem;
+  }
+
+  @include respond(desktop) {
+    text-align: left;
+    font-size: 5rem;
+  }
+}
+
+.title,
+.ratings {
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,48 @@
+.ratings {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    &__block {
+        background-color: $light-grayish-magenta;
+        padding: 1.5rem 2rem;
+        max-width: 40rem;
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+        border-radius: $primary-radius;
+
+        @include respond(tab-land){
+            &:first-child {
+                position: relative;
+                left: -3rem;
+            }
+
+            &:last-child {
+                position: relative;
+                right: -3rem;
+            }
+        }
+
+        @include respond(desktop){
+            &:first-child {
+                position: relative;
+                left: -6rem;
+            }
+
+            &:last-child {
+                position: relative;
+                right: -6rem;
+            }
+        }
+    }
+
+    &__img:not(:last-child) {
+        padding-right: 3px;
+    }
+
+    &__review {
+        color: $very-dark-magenta;
+        font-weight: 500;
+    }
+}

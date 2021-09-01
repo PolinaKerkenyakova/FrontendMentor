@@ -1,0 +1,63 @@
+.page-wrapper {
+  width: 90%;
+  margin: 8rem auto;
+
+  @include respond(tab-land) {
+    margin: 12rem auto;
+    width: 90%;
+  }
+}
+
+.main {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-wrapper {
+  @include respond(desktop) {
+    display: flex;
+  }
+}
+
+.title {
+  &__text {
+    color: $dark-grayish-magenta;
+    margin-top: 2rem;
+    text-align: center;
+
+    @include respond(tab-port) {
+      width: 80%;
+      margin: 2rem auto 0 auto;
+    }
+
+    @include respond(desktop) {
+      text-align: left;
+      margin: 0;
+      margin-top: 2rem;
+    }
+  }
+
+  flex-basis: 50%;
+
+  @include respond(tab-port) {
+    margin-left: 5.5rem;
+  }
+
+  @include respond(desktop) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-basis: 40%;
+
+  }
+}
+
+.ratings {
+  flex-basis: 50%;
+
+  @include respond(desktop) {
+    flex-basis: 60%;
+  }
+}

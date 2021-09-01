@@ -1,0 +1,65 @@
+.testimonials {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  &__testimonial {
+    background-color: $very-dark-magenta;
+    padding: 4rem;
+    max-width: 35rem;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: $primary-radius;
+
+    @include respond(desktop){
+      &:nth-child(2) {
+        position: relative;
+        bottom: -3rem;
+      }
+
+      &:nth-child(3) {
+        position: relative;
+        bottom: -6rem;
+      }
+  }
+  }
+
+  &__author {
+    display: flex;
+    padding-bottom: 2.5rem;
+  }
+
+  &__img-container {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  &__buyer-info {
+    margin-left: 2rem;
+  }
+
+  &__buyer-name {
+    color: $white;
+    font-weight: 500;
+  }
+
+  &__buyer-type {
+    color: $soft-pink;
+  }
+
+  &__quote {
+    color: $white;
+  }
+
+  @include respond(tab-land) {
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+}
