@@ -1,0 +1,42 @@
+.form {
+
+    &__relative-center {
+        position: relative;
+        right: -2rem;
+    }
+
+  &__input {
+    border: 1px solid $desaturated-red;
+    padding: 1rem 4rem 1rem 2rem;
+    border-radius: 30rem;
+ 
+    @include respond(tab-port) {
+        width: 35rem;
+    }
+
+    font-size: 1.4rem;
+    &::placeholder {
+      color: $desaturated-red;
+      font-weight: 300;
+    }
+  }
+
+  &__img-container {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+    border: none;
+    padding: 0.75rem 3rem;
+    border-radius: 30rem;
+    position: relative;
+    left: -4.2rem;
+    bottom: -3px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+      box-shadow: 3px 9px 23px 2px hsla(0, 80%, 86%, 0.8);
+      left: -3.5rem;
+    }
+  }
+}

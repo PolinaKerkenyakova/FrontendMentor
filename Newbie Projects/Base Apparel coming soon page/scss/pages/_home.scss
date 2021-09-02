@@ -1,0 +1,67 @@
+.page-wrapper {
+  min-height: 100vh;
+
+  @include respond(tab-land) {
+    background-image: url("../../images/bg-pattern-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.section-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 15rem;
+  margin-bottom: 3rem;
+
+  @include respond(tab-port) {
+    width: 20rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.hero-img-container {
+  background-image: url("../../images/hero-mobile.jpg");
+  min-height: 24rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-bottom: 3rem;
+
+  @media (min-width: 450px) {
+    min-height: 35rem;
+  }
+
+  @include respond(tab-port) {
+    min-height: 47rem;
+  }
+
+  @include respond(tab-land) {
+    background-image: url("../../images/hero-desktop.jpg");
+  }
+}
+
+.content {
+  &__highlight {
+    color: $dark-grayish-red;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin: 3rem 0;
+  }
+}

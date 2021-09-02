@@ -1,6 +1,8 @@
-@import 'abstracts/mixins', 'abstracts/variables';
+@import 'abstracts/mixins', 'abstracts/variables', 'abstracts/utilities';
 
 @import 'base/base', 'base/typography';
+
+@import 'components/form';
 
 @import 'pages/home';
 
