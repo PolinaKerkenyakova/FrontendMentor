@@ -8,20 +8,23 @@
 .faq-section {
   display: flex;
   flex-flow: column wrap;
-  // justify-content: center;
   align-items: center;
   background-color: #fff;
-  width: 90%;
-  max-width: 400px;
+  width: 88%;
+  max-width: 40rem;
+  border-radius: 2rem;
+  padding: 0 2rem 4.5rem 2rem;
+  margin: 12rem 0 6rem 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.img-container {
-  background: url("../../images/illustration-woman-online-mobile.svg"),
-    url("../../images/bg-pattern-mobile.svg");
-  background-repeat: no-repeat;
-  height: 19.6rem;
-  width: 26.6rem;
-}
+// .img-container {
+//   background: url("../../images/illustration-woman-online-mobile.svg"),
+//     url("../../images/bg-pattern-mobile.svg");
+//   background-repeat: no-repeat;
+//   height: 19.6rem;
+//   width: 26.6rem;
+// }
 
 .questions {
   width: 90%;
@@ -29,13 +32,16 @@
 }
 
 .question {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--light-grayish-blue);
+
   &__details {
     display: flex;
     justify-content: space-between;
   }
 
   &__text {
-      transition: all .2s;
+    transition: all 0.2s;
   }
 
   &__text:hover {
@@ -43,10 +49,18 @@
   }
 
   &__arrow {
-    transition: all .5s;
+    transition: all 0.5s;
   }
 }
 
-.rotate-arrow {
-    transform: rotate(-180deg);
+.mobile-imgs-container {
+  position: relative;
+  &__ilustration {
+    position: absolute;
+    top: -10.5rem;
+    left: -2.5rem;
+  }
+
+  //   &__background {
+  //   }
 }

@@ -1,3 +1,13 @@
 .hidden {
-    display: none;
+    display: none !important;
+}
+
+.rotate-arrow {
+    transform: rotate(-180deg) !important;
+}
+
+
+.highlight-question {
+    color: var(--very-dark-desaturated-blue) !important;
+    font-weight: 700 !important;
 }
