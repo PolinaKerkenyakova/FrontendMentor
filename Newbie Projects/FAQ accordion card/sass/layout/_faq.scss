@@ -1,0 +1,52 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-section {
+  display: flex;
+  flex-flow: column wrap;
+  // justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+}
+
+.img-container {
+  background: url("../../images/illustration-woman-online-mobile.svg"),
+    url("../../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  height: 19.6rem;
+  width: 26.6rem;
+}
+
+.questions {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.question {
+  &__details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+      transition: all .2s;
+  }
+
+  &__text:hover {
+    color: var(--soft-red);
+  }
+
+  &__arrow {
+    transition: all .5s;
+  }
+}
+
+.rotate-arrow {
+    transform: rotate(-180deg);
+}

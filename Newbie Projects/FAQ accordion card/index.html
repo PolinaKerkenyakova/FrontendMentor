@@ -6,27 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on
-  team members for the Premium plan.
+  <main class="main">
+    <section class="faq-section">
+      <section class="img-container"></section>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+      <section class="questions">
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <h1 class="primary-heading">FAQ</h1>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <div class="question">
+          <div class="question__details">
+            <div class="question__text">How many team members can I invite?</div>
+            <div class="question__img-container">
+              <img src="images/icon-arrow-down.svg" alt="Arror down" class="question__arrow">
+            </div>
+          </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          <div class="qustion__answear hidden">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question__details">
+            <div class="question__text">What is the maximum file upload size?</div>
+            <div class="question__img-container">
+              <img src="images/icon-arrow-down.svg" alt="Arror down" class="question__arrow">
+            </div>
+          </div>
+
+          <div class="qustion__answear hidden">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question__details">
+            <div class="question__text">How do I reset my password?</div>
+            <div class="question__img-container">
+              <img src="images/icon-arrow-down.svg" alt="Arror down" class="question__arrow">
+            </div>
+          </div>
+
+          <div class="qustion__answear hidden">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question__details">
+            <div class="question__text">Can I cancel my subscription?</div>
+            <div class="question__img-container">
+              <img src="images/icon-arrow-down.svg" alt="Arror down" class="question__arrow">
+            </div>
+          </div>
+
+          <div class="qustion__answear hidden">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question__details">
+            <div class="question__text">Do you provide additional support?</div>
+            <div class="question__img-container">
+              <img src="images/icon-arrow-down.svg" alt="Arror down" class="question__arrow">
+            </div>
+          </div>
+
+          <div class="qustion__answear hidden">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </div>
+        </div>
+
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,77 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba265d;
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999;
-  --line: 1px solid var(--color-grey-light-2);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.08);
-  --shadow-dark: 0 2rem 5rem rgba(0, 0, 0, 0.3);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+  --light-grayish-blue: hsl(240, 5%, 91%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --default-font-size: 1.2rem;
 }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
-}
-@media only screen and (max-width: 68.75em) {
-  html {
-    font-size: 50%;
-  }
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
-  color: var(--color-grey-dark-2);
-  line-height: 1.6;
-  background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-size: var(--default-font-size);
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.5;
+  background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+}
+
+.primary-heading {
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
   min-height: 100vh;
-}
-
-.paragraph:not(:last-of-type) {
-  margin-bottom: 2rem;
-}
-
-.list {
-  list-style: none;
-  margin: 3rem 0;
-  padding: 3rem;
-  border-top: var(--line);
-  border-bottom: var(--line);
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.list__item {
-  flex: 0 0 50%;
-  margin-bottom: 0.7rem;
+
+.faq-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
 }
-.list__item::before {
-  content: "";
-  display: inline-block;
-  height: 1rem;
-  width: 1rem;
-  margin-right: 0.7rem;
-  background-color: var(--color-primary);
-  mask-image: url(../../img/SVG/chevron-thin-right.svg);
-  mask-size: cover;
+
+.img-container {
+  background: url("../../images/illustration-woman-online-mobile.svg"), url("../../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  height: 19.6rem;
+  width: 26.6rem;
+}
+
+.questions {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.question__details {
+  display: flex;
+  justify-content: space-between;
+}
+.question__text {
+  transition: all 0.2s;
+}
+.question__text:hover {
+  color: var(--soft-red);
+}
+.question__arrow {
+  transition: all 0.5s;
+}
+
+.rotate-arrow {
+  transform: rotate(-180deg);
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
