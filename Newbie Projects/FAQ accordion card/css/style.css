@@ -27,6 +27,11 @@ body {
   font-size: 3rem;
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .primary-heading {
+    text-align: left;
+  }
+}
 
 .hidden {
   display: none !important;
@@ -38,11 +43,12 @@ body {
 
 .highlight-question {
   color: var(--very-dark-desaturated-blue) !important;
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 
 .main {
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,10 +66,29 @@ body {
   margin: 12rem 0 6rem 0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+@media (min-width: 1200px) {
+  .faq-section {
+    flex-flow: row wrap;
+    max-width: 88rem;
+    margin: 0;
+    padding: 2rem 8rem 6rem 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-container {
+    flex-basis: 50%;
+  }
+}
 
 .questions {
   width: 90%;
   margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .questions {
+    flex-basis: 50%;
+  }
 }
 
 .question {
@@ -85,12 +110,47 @@ body {
 }
 
 .mobile-imgs-container {
+  display: block;
   position: relative;
+}
+@media (min-width: 1200px) {
+  .mobile-imgs-container {
+    display: none;
+  }
 }
 .mobile-imgs-container__ilustration {
   position: absolute;
   top: -10.5rem;
   left: -2.5rem;
+}
+
+.desktop-imgs-container {
+  display: none;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .desktop-imgs-container {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .desktop-imgs-container__ilustration {
+    position: absolute;
+    width: 38rem;
+    top: -14rem;
+    left: -11rem;
+  }
+}
+.desktop-imgs-container__background {
+  position: absolute;
+  width: 80rem;
+  top: -44rem;
+  left: -52.5rem;
+}
+.desktop-imgs-container__box {
+  position: absolute;
+  top: -5.7rem;
+  left: -15.3rem;
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
