@@ -54,13 +54,34 @@ body {
   align-items: center;
 }
 
+.wrapper {
+  width: 88%;
+  max-width: 40rem;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 88rem;
+  }
+  .wrapper::before {
+    content: "";
+    height: 19rem;
+    width: 19rem;
+    background: url(../../images/illustration-box-desktop.svg);
+    background-size: cover;
+    position: absolute;
+    z-index: 100;
+    left: -9.4rem;
+    top: 13.9rem;
+  }
+}
+
 .faq-section {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   background-color: #fff;
-  width: 88%;
-  max-width: 40rem;
+  width: 100%;
   border-radius: 2rem;
   padding: 0 2rem 4.5rem 2rem;
   margin: 12rem 0 6rem 0;
@@ -72,6 +93,7 @@ body {
     max-width: 88rem;
     margin: 0;
     padding: 2rem 8rem 6rem 6rem;
+    overflow: hidden;
   }
 }
 
