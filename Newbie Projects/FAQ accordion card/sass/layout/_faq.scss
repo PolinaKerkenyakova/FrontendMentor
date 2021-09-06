@@ -6,13 +6,34 @@
   align-items: center;
 }
 
+.wrapper {
+  width: 88%;
+  max-width: 40rem;
+  position: relative;
+
+  @media (min-width: 1200px) {
+    max-width: 88rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../images/illustration-box-desktop.svg");
+      height: 18rem;
+      width: 18rem;
+      background-size: cover;
+      z-index: 1;
+      top: 14rem;
+      left: -9rem;
+    }
+  }
+}
+
 .faq-section {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   background-color: #fff;
-  width: 88%;
-  max-width: 40rem;
+  width: 100%;
   border-radius: 2rem;
   padding: 0 2rem 4.5rem 2rem;
   margin: 12rem 0 6rem 0;
@@ -20,9 +41,9 @@
 
   @media (min-width: 1200px) {
     flex-flow: row wrap;
-    max-width: 88rem;
     margin: 0;
     padding: 2rem 8rem 6rem 6rem;
+    overflow: hidden;
   }
 }
 
@@ -100,11 +121,5 @@
     width: 80rem;
     top: -44rem;
     left: -52.5rem;
-  }
-
-  &__box {
-    position: absolute;
-    top: -5.7rem;
-    left: -15.3rem;
   }
 }
