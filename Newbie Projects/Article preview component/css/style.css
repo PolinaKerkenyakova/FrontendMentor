@@ -23,7 +23,6 @@ body {
   max-width: 40rem;
   width: 90%;
   border-radius: 1.2rem;
-  overflow: hidden;
   position: relative;
 }
 @media (min-width: 900px) {
@@ -35,6 +34,8 @@ body {
 }
 .card__img {
   width: 100%;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
 }
 @media (min-width: 900px) {
   .card__img {
@@ -45,6 +46,8 @@ body {
 .card__content {
   background-color: #fff;
   padding: 1.5rem 3rem 2rem 3rem;
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
 }
 .card__publishment {
   display: flex;
@@ -72,6 +75,11 @@ body {
 .card__name {
   font-weight: 700;
 }
+@media only screen and (min-width: 900px) {
+  .card__share--mobile {
+    display: none;
+  }
+}
 .card__share-icon-container {
   background-color: #ecf2f8;
   width: 4rem;
@@ -96,6 +104,8 @@ body {
   background-color: #48556a;
   position: absolute;
   display: flex;
+}
+.card__share-options--mobile {
   width: 100%;
   border-bottom-right-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
@@ -103,6 +113,16 @@ body {
   left: 1px;
   justify-content: space-between;
   padding: 1.4rem 3.1rem;
+}
+@media only screen and (min-width: 900px) {
+  .card__share-options--mobile {
+    width: 29rem;
+    padding: 0.4rem 1rem;
+    border-radius: 1.2rem;
+    justify-content: center;
+    bottom: 9rem;
+    left: 42.8rem;
+  }
 }
 .card__list {
   display: flex;
