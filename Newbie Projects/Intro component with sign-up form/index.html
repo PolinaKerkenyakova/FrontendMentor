@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="app.js" defer></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 
@@ -33,10 +34,38 @@
         </div>
         <div class="form-wrapper">
           <form class="form">
-            <input type="text" name="first-name" placeholder="First Name" class="form__field">
-            <input type="text" name="last-name" placeholder="Last Name" class="form__field">
-            <input type="email" name="email" placeholder="Email Address" class="form__field">
-            <input type="password" name="password" placeholder="Password" class="form__field">
+            <div class="input-container">
+              <input type="text" name="first-name" placeholder="First Name" class="form__field">
+              <div class="first-name-error">
+                <img src="images/icon-error.svg" alt="" class="error-pop-icon">
+                <p class="input-error-text">First Name cannot be empty</p>
+              </div>
+            </div>
+
+            <div class="input-container">
+              <input type="text" name="last-name" placeholder="Last Name" class="form__field">
+              <div class="last-name-error">
+                <img src="images/icon-error.svg" alt="" class="error-pop-icon">
+                <p class="input-error-text ">Last Name cannot be empty</p>
+              </div>
+            </div>
+
+            <div class="input-container">
+              <input type="email" name="email" placeholder="Email Address" class="form__field">
+              <div class="email-error">
+                <img src="images/icon-error.svg" alt="" class="error-pop-icon">
+                <p class="input-error-text ">Looks like this is not an email</p>
+              </div>
+            </div>
+
+            <div class="input-container">
+              <input type="password" name="password" placeholder="Password" class="form__field">
+              <div class="password-error">
+                <img src="images/icon-error.svg" alt="" class="error-pop-icon">
+                <p class="input-error-text ">Password connot be empry</p>
+              </div>
+            </div>
+
             <input type="submit" value="Claim your free trial" class="form__submit-btn">
           </form>
           <p class="agreement">

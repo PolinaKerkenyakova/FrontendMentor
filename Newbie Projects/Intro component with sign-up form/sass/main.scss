@@ -2,6 +2,8 @@
 
 @import "base/base", "base/typography", "base/utilities";
 
+@import "components/input-error";
+
 @import "layout/content", "layout/sign-up";
 
 @import "pages/home";

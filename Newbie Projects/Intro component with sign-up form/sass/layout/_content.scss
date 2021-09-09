@@ -1,0 +1,5 @@
+.content {
+    @include respond(tab-land) {
+        text-align: left;
+    }
+}

@@ -1,19 +1,34 @@
 .main {
-    background: url('../../images/bg-intro-mobile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background: url("../../images/bg-intro-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include respond(tab-land) {
+    background: url("../../images/bg-intro-desktop.png");
+  }
 }
 
 .page-wrapper {
-    width: 90%;
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    flex-flow: column wrap;
-    text-align: center;
-}
+  width: 90%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-flow: column wrap;
+  text-align: center;
+  padding: 6rem 0 8rem 0;
 
+  @include respond(tab-land) {
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 100vw;
+    padding: 3rem 6rem;
+  }
+
+  @include respond(desktop) {
+   padding: 8rem 16rem;
+  }
+}

@@ -1,3 +1,18 @@
+.sign-up {
+  width: 90%;
+
+  @include respond(tab-land) {
+    width: 100%;
+    max-width: 50rem;
+    padding-left: 3rem;
+  }
+
+  @include respond(desktop) {
+    max-width: 70rem;
+    padding-left: 4rem;
+  }
+}
+
 .offer,
 .form-wrapper {
   border-radius: $border-radius;
@@ -8,6 +23,11 @@
 .offer {
   background-color: $blue;
   padding: 0.4rem 5rem;
+  margin: 3.5rem 0 3rem 0;
+
+  @include respond(tab-land) {
+    margin: 0 0 3rem 0;
+  }
 }
 
 .form-wrapper {
@@ -24,10 +44,8 @@
     border: 1px solid $grayish-blue;
     color: $dark-blue;
     font-weight: 500;
-    margin: 0 0 2rem 0;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: $border-radius-small;
-
   }
 
   &__submit-btn {
@@ -44,11 +62,13 @@
   }
 }
 
-
 .agreement {
-    color: $grayish-blue;
+  color: $grayish-blue;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  font-size: 1.2rem;
 }
 
 .terms-and-services {
-    color: $red;
+  color: $red;
 }

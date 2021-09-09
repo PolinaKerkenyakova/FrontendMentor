@@ -1,0 +1,40 @@
+.input-container {
+  position: relative;
+  margin: 0 0 2rem 0;
+  line-height: 1;
+}
+
+.input-error-text {
+  color: $red;
+  text-align: right;
+  font-style: italic;
+}
+
+.first-name-error,
+.last-name-error,
+.email-error,
+.password-error {
+  display: none;
+}
+
+.error-pop-icon {
+  display: block;
+  position: absolute;
+  top: 0.9rem;
+  right: 2rem;
+}
+
+// .extra.first-name-error-container::after,
+// .extra.last-name-error-container::after,
+// .extra.email-error-container::after,
+// .extra.password-error-container::after {
+//     display: block;
+//     content: "";
+//     background-image: url('../../images/icon-error.svg');
+//     position: absolute;
+//     height: 2.4rem;
+//     width: 2.4rem;
+//     background-size: cover;
+//     top: .9rem;
+//     right: 2rem;
+// }
