@@ -1,0 +1,19 @@
+.main {
+    background: url('../../images/bg-intro-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-wrapper {
+    width: 90%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-flow: column wrap;
+    text-align: center;
+}
+

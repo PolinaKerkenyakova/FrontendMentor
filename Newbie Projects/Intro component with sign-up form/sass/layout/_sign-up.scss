@@ -1,0 +1,54 @@
+.offer,
+.form-wrapper {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  width: 100%;
+}
+
+.offer {
+  background-color: $blue;
+  padding: 0.4rem 5rem;
+}
+
+.form-wrapper {
+  background-color: $white;
+  padding: 2rem 0;
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto;
+
+  &__field {
+    width: 100%;
+    border: 1px solid $grayish-blue;
+    color: $dark-blue;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    padding: 1rem;
+    border-radius: $border-radius-small;
+
+  }
+
+  &__submit-btn {
+    width: 100%;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $green;
+    border-radius: $border-radius-small;
+    border: none;
+    box-shadow: $box-shadow-green;
+    padding: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+
+.agreement {
+    color: $grayish-blue;
+}
+
+.terms-and-services {
+    color: $red;
+}
