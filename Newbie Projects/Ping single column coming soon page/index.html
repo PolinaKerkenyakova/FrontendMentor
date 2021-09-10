@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="page-wrapper">
 
-  We are launching soon!
+    <header class="header">
+      <h1 class="heading-primary">Ping.</h1>
+      <h2 class="heading-secondary">We are launching <span class="text--black">soon</span>!</h2>
+      <p class="header__text">Subscribe and get notified</p>
+      <button class="btn btn-cta">Notify Me</button>
+    </header>
 
-  Subscribe and get notified
+    <main class="main">
+      <div class="main__img-container">
+        <img src="images/illustration-dashboard.png" alt="Ping dashboard image" class="main__img">
+      </div>
+    </main>
 
-  Notify Me
+    <footer>
+      <ul class="list">
+        <li class="list__item">
+          <i class="fab fa-facebook-f list__icon"></i>
+        </li>
 
-  &copy; Copyright Ping. All rights reserved.
+        <li class="list__item">
+          <i class="fab fa-twitter list__icon"></i>
+        </li>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+        <li class="list__item">
+          <i class="fab fa-instagram list__icon"></i>
+        </li>
+      </ul>
+      <p class="copyright-text">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
+
 </html>
