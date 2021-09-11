@@ -1,8 +1,21 @@
-.primary-heading {
-    font-weight: 700;
-    font-size: 2.7rem;
+.heading-primary {
+  font-weight: 700;
+  color: $very-dark-blue;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
 }
 
-.text--strong {
-    font-weight: 600;
+.heading-secondary {
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.text--dark {
+  color: $very-dark-blue;
+  font-weight: 700;
+}
+
+.text--blue {
+  color: $blue;
 }
