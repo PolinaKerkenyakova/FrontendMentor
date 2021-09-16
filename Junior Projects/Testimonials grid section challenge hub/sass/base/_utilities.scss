@@ -25,3 +25,9 @@
     background-color: $very-dark-blackish-blue !important;
   }
 }
+
+.border {
+  &--light-purple {
+    border: 2px solid #A775F2;
+  }
+}

@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
+  font-size: 1.3rem;
 }
 
 .text--light {
@@ -36,14 +37,47 @@ body {
   background-color: #19212e !important;
 }
 
+.border--light-purple {
+  border: 2px solid #A775F2;
+}
+
+.card {
+  border-radius: 0.8rem;
+}
 .card__wrapper {
   padding: 3rem;
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 1.5rem;
+}
+.card__photo-container {
+  grid-row: 1/2;
+}
+.card__user-photo {
+  border-radius: 50%;
+  height: 3.4rem;
+  width: 3.4rem;
+}
+.card__user-info {
+  align-self: center;
+}
+.card__user-name {
+  font-weight: 600;
 }
 .card__user-status {
   opacity: 50%;
+  font-size: 1.2rem;
+}
+.card__main-text {
+  font-size: 2rem;
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  font-weight: 600;
 }
 .card__text {
+  line-height: 1.6;
   opacity: 70%;
+  grid-column: 1/-1;
 }
 
 .main {
@@ -52,8 +86,12 @@ body {
 
 .page-wrapper {
   width: 85%;
+  max-width: 34rem;
   padding: 8rem 0;
   margin: 0 auto;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 2.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

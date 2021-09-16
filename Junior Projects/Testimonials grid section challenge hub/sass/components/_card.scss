@@ -1,14 +1,46 @@
 .card {
+  border-radius: 0.8rem;
 
-    &__wrapper {
-        padding: 3rem;
-    }
+  &__wrapper {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 1.5rem;
+  }
 
-    &__user-status{
-        opacity: 50%;
-    }
+  &__photo-container {
+    grid-row: 1/ 2;
+  }
 
-    &__text {
-        opacity: 70%;
-    }
+  &__user-photo {
+      border-radius: 50%;
+      height: 3.4rem;
+      width: 3.4rem;
+  }
+
+  &__user-info {
+      align-self: center;
+  }
+
+  &__user-name {
+      font-weight: 600;
+  }
+
+  &__user-status {
+    opacity: 50%;
+    font-size: 1.2rem;
+  }
+
+  &__main-text {
+    font-size: 2rem;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    font-weight: 600;
+  }
+
+  &__text {
+    line-height: 1.6;
+    opacity: 70%;
+    grid-column: 1 / -1;
+  }
 }
