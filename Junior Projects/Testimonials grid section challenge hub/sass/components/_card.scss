@@ -1,0 +1,14 @@
+.card {
+
+    &__wrapper {
+        padding: 3rem;
+    }
+
+    &__user-status{
+        opacity: 50%;
+    }
+
+    &__text {
+        opacity: 70%;
+    }
+}

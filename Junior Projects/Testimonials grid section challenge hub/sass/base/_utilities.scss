@@ -1,0 +1,27 @@
+.text {
+  &--light {
+    color: $light-grayish-blue !important;
+  }
+
+  &--dark {
+    color: $very-dark-grayish-blue !important;
+  }
+}
+
+.bg-color {
+  &--white {
+    background-color: $white !important;
+  }
+
+  &--purple {
+    background-color: $moderate-violet !important;
+  }
+
+  &--dark-gray {
+    background-color: $very-dark-grayish-blue !important;
+  }
+
+  &--blackish-blue {
+    background-color: $very-dark-blackish-blue !important;
+  }
+}
