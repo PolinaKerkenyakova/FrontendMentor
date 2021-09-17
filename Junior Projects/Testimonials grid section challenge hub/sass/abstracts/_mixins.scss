@@ -6,13 +6,13 @@
     }
   
     @if $breakpoint == tab-port {
-      @media only screen and (min-width: 601px) {
+      @media only screen and (min-width: 801px) {
         @content;
       }
     }
   
     @if $breakpoint == tab-land {
-      @media only screen and (min-width: 900px) {
+      @media only screen and (min-width: 1150px) {
         @content;
       }
     }
