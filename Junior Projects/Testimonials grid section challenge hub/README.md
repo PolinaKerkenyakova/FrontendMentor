@@ -10,11 +10,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
-### Screenshot
-
-![](./screenshot.png)
-
-
 ## My process
 
 ### Built with
@@ -26,3 +21,11 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### Screenshots
+
+### Desktop
+![](./screenshot-desktop.png)
+
+### Mobile
+![](./screenshot-mobile.png)
