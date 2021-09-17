@@ -41,8 +41,13 @@ body {
   border: 2px solid #A775F2;
 }
 
+.box-shadow {
+  box-shadow: 11px 38px 20px -28px rgba(0, 0, 0, 0.1);
+}
+
 .card {
   border-radius: 0.8rem;
+  position: relative;
 }
 .card__wrapper {
   padding: 3rem;
@@ -72,12 +77,22 @@ body {
   font-size: 2rem;
   grid-row: 2/3;
   grid-column: 1/-1;
-  font-weight: 600;
+  font-weight: 500;
+  position: relative;
 }
 .card__text {
   line-height: 1.6;
   opacity: 70%;
   grid-column: 1/-1;
+}
+.card:first-child::before {
+  content: "";
+  background-image: url(../../images/bg-pattern-quotation.svg);
+  background-size: cover;
+  height: 11rem;
+  width: 11rem;
+  position: absolute;
+  right: 2rem;
 }
 
 .main {
