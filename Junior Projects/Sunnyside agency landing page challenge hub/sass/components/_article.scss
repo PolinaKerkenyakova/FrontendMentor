@@ -1,0 +1,43 @@
+.article {
+  width: 86%;
+  margin: 0 auto;
+  text-align: center;
+  color: $very-dark-desaturated-blue;
+  padding: 5rem 0;
+  position: relative;
+
+  &__text {
+    padding: 2.5rem 0;
+    color: $dark-grayish-blue;
+    line-height: 1.5;
+  }
+
+  &__learn-more {
+    font-family: "Fraunces", serif;
+    color: $very-dark-desaturated-blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+}
+
+.under-line {
+  width: 12rem;
+  height: 0.8rem;
+  position: absolute;
+  top: left;
+  left: 101px;
+  bottom: 49px;
+  z-index: -1;
+  border-radius: 30rem;
+  opacity: 25%;
+
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  &--soft-red {
+    background-color: $soft-red;
+  }
+}

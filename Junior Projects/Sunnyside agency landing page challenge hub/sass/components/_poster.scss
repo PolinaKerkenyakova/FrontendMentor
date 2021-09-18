@@ -1,0 +1,23 @@
+.poster {
+    position: relative;
+
+    &__text-container{
+        width: 86%;
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        bottom: 5.5rem;
+        left: 2.5rem;
+        z-index: 1;
+    }
+
+    &__heading {
+        font-size: 2.6rem;
+    }
+
+    &__text {
+        line-height: 1.5;
+        font-size: 1.5rem;
+        padding: 2.5rem 0;
+    }
+}
