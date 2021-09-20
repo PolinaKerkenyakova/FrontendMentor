@@ -19,17 +19,38 @@
         <img src="./images/desktop/image-header.jpg" alt="Orange slice">
       </picture>
 
-      <div class="arrow-container">
-        <img src="images/icon-arrow-down.svg" alt="Arrow down">
+      <div class="header__logo-container">
+        <p class="header__logo">sunnyside</p>
       </div>
 
-      <div class="logo-container">
-        <p class="logo">sunnyside</p>
+
+      <div class="header__heading-container">
+        <h1>We are creatives</h1>
+        <div class="header__arrow-container">
+          <img src="images/icon-arrow-down.svg" alt="Arrow down" class="header__arrow">
+        </div>
       </div>
 
-      <div class="menu">
-        <img src="images/icon-hamburger.svg" alt="">
-      </div>
+      <nav class="header__nav">
+        <div class="header__menu-icon-container">
+          <img src="images/icon-hamburger.svg" alt="Hanburder menu" class="header__menu-icon">
+        </div>
+        
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">About</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Services</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Projects</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link btn btn--yellow">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <div class="sigle-img-container">
@@ -48,8 +69,10 @@
         Engage your clients through compelling visuals that do most of the marketing for you.
       </p>
 
-      <a href="#" class="article__learn-more">Learn more</a>
-      <div class="under-line under-line--yellow"></div>
+      <div class="article__learn-more-container">
+        <a href="#" class="article__learn-more">Learn more</a>
+        <div class="under-line under-line--yellow"></div>
+      </div>
     </article>
 
     <div class="sigle-img-container">
@@ -64,13 +87,15 @@
       <h3>Stand out to the right audience</h3>
 
       <p class="article__text">
-        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+        build
         and extend your brand in digital places.
       </p>
 
-      <a href="#" class="article__learn-more">Learn more</a>
-      <div class="under-line under-line--soft-red"></div>
-
+      <div class="article__learn-more-container">
+        <a href="#" class="article__learn-more">Learn more</a>
+        <div class="under-line under-line--soft-red"></div>
+      </div>
     </article>
 
     <article class="poster text--cyan">
@@ -83,7 +108,8 @@
         <h3 class="poster__heading">Graphic design</h3>
 
         <p class="poster__text">
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential
           clients’ attention.
         </p>
       </div>
@@ -97,7 +123,7 @@
       </picture>
       <div class="poster__text-container">
         <h3 class="poster__heading">Photography</h3>
-        
+
         <p class="poster__text">
           Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
         </p>
@@ -183,37 +209,49 @@
     </section>
 
     <footer class="footer">
-      <p>sunnyside</p>
+      <p class="footer__logo">sunnyside</p>
 
       <nav class="footer__nav">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">About
+            </a>
+          </li>
+
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Services
+            </a>
+          </li>
+
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Projects
+            </a>
+          </li>
         </ul>
       </nav>
 
-      <ul>
-        <li>
-          <a href="#">
+      <ul class="footer__social-icons">
+
+        <li class="footer__social-icon">
+          <a href="#" class="footer__social-link">
             <i class="fab fa-facebook-square"></i>
           </a>
         </li>
 
-        <li>
-          <a href="#">
+        <li class="footer__social-icon">
+          <a href="#" class="footer__social-link">
             <i class="fab fa-instagram"></i>
           </a>
         </li>
 
-        <li>
-          <a href="#">
+        <li class="footer__social-icon">
+          <a href="#" class="footer__social-link">
             <i class="fab fa-twitter"></i>
           </a>
         </li>
 
-        <li>
-          <a href="#">
+        <li class="footer__social-icon">
+          <a href="#" class="footer__social-link">
             <i class="fab fa-pinterest"></i>
           </a>
         </li>
@@ -221,10 +259,6 @@
       </ul>
     </footer>
   </div>
-  <!-- About
-  Services
-  Projects
-  Contact -->
 </body>
 
 </html>

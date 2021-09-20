@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 html {
   font-size: 62.5%;
@@ -14,12 +14,14 @@ html {
 
 img {
   width: 100%;
+  vertical-align: bottom;
 }
 
 body {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 h1,
@@ -31,9 +33,24 @@ h6 {
   font-family: "Fraunces", serif;
 }
 
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+}
+
 h3 {
   font-size: 3.2rem;
   font-weight: 900;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #a7abae;
 }
 
 .text--cyan {
@@ -46,16 +63,21 @@ h3 {
 
 .article {
   width: 86%;
+  max-width: 60rem;
   margin: 0 auto;
-  text-align: center;
   color: #23303e;
   padding: 5rem 0;
-  position: relative;
 }
 .article__text {
   padding: 2.5rem 0;
   color: #818498;
   line-height: 1.5;
+}
+.article__learn-more-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 .article__learn-more {
   font-family: "Fraunces", serif;
@@ -70,9 +92,7 @@ h3 {
   width: 12rem;
   height: 0.8rem;
   position: absolute;
-  top: left;
-  left: 101px;
-  bottom: 49px;
+  top: 1.4rem;
   z-index: -1;
   border-radius: 30rem;
   opacity: 25%;
@@ -90,7 +110,6 @@ h3 {
 .poster__text-container {
   width: 86%;
   margin: 0 auto;
-  text-align: center;
   position: absolute;
   bottom: 5.5rem;
   left: 2.5rem;
@@ -107,7 +126,147 @@ h3 {
 
 .testimonials {
   width: 86%;
+  max-width: 60rem;
   margin: 0 auto;
+  padding: 6.5rem 0 8rem 0;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5rem 0;
+}
+.testimonial:nth-of-type(1) {
+  padding-top: 6rem;
+}
+.testimonial:nth-of-type(3) {
+  padding-bottom: 0;
+}
+.testimonial__img-container {
+  height: 8rem;
+  width: 8rem;
+}
+.testimonial__img {
+  border-radius: 50%;
+}
+.testimonial__text {
+  color: #5a636c;
+  padding: 3rem 0;
+}
+.testimonial__name {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+}
+.testimonial__job-title {
+  color: #a7abae;
+  font-size: 1.4rem;
+  padding-top: 0.8rem;
+}
+
+.header {
+  position: relative;
+}
+.header__logo-container {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.header__logo {
+  color: white;
+  font-weight: 800;
+  font-size: 2.1rem;
+}
+.header__heading-container {
+  position: absolute;
+  top: 15.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__arrow-container {
+  margin-top: 6rem;
+}
+.header__arrow {
+  height: 10rem;
+}
+.header__menu-icon-container {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+}
+.header__menu-icon {
+  width: 2.1rem;
+}
+.header__nav-list {
+  list-style: none;
+  background-color: white;
+  position: absolute;
+  top: 20rem;
+  width: calc(100% - 5rem);
+  margin: 0;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #818498;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer {
+  background-color: #90d4c5;
+  color: #2d7466;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0 8rem 0;
+}
+.footer__logo {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.footer__nav-list, .footer__social-icons {
+  display: flex;
+  list-style: none;
+}
+.footer__nav-link, .footer__social-link {
+  color: #458c7e;
+}
+.footer__nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0 7rem 0;
+}
+.footer__nav-item {
+  padding: 0 2.5rem;
+}
+.footer__nav-link {
+  text-decoration: none;
+  color: rgba(46, 118, 103, 0.7);
+}
+.footer__social-icon {
+  padding: 0 1rem;
+}
+.footer__nav-link, .footer__social-icon {
+  list-style: none;
+}
+.footer__social-link {
+  color: #2d7466;
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 1.3rem 2rem;
+  border-radius: 30rem;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+}
+.btn--yellow {
+  background-color: #fad400;
+  color: #272e19;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,47 @@
 .testimonials {
-    width: 86%;
-    margin: 0 auto;
+  width: 86%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 6.5rem 0 8rem 0;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 3.5rem 0;
+
+  &:nth-of-type(1) {
+      padding-top: 6rem;
+  }
+
+  &:nth-of-type(3) {
+    padding-bottom: 0;
+}
+
+  &__img-container {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__text {
+    color: $very-dark-grayish-blue;
+    padding: 3rem 0;
+  }
+
+  &__name {
+    font-family: "Fraunces", serif;
+    color: $very-dark-desaturated-blue;
+  }
+
+  &__job-title {
+    color: $grayish-blue;
+    font-size: 1.4rem;
+    padding-top: .8rem;
+  }
 }

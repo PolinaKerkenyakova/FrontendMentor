@@ -1,15 +1,21 @@
 .article {
   width: 86%;
+  max-width: 60rem;
   margin: 0 auto;
-  text-align: center;
   color: $very-dark-desaturated-blue;
   padding: 5rem 0;
-  position: relative;
 
   &__text {
     padding: 2.5rem 0;
     color: $dark-grayish-blue;
     line-height: 1.5;
+  }
+
+  &__learn-more-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
   }
 
   &__learn-more {
@@ -26,9 +32,7 @@
   width: 12rem;
   height: 0.8rem;
   position: absolute;
-  top: left;
-  left: 101px;
-  bottom: 49px;
+  top: 1.4rem;
   z-index: -1;
   border-radius: 30rem;
   opacity: 25%;
