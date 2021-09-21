@@ -1,8 +1,19 @@
 .testimonials {
   width: 86%;
-  max-width: 60rem;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 6.5rem 0 8rem 0;
+
+  @media only screen and (min-width: 650px) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (min-width: 900px) {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 11rem auto 7rem auto;
+  }
 }
 
 .testimonial {
@@ -12,13 +23,21 @@
 
   padding: 3.5rem 0;
 
+  @media only screen and (min-width: 900px) {
+    padding: 3.5rem 1rem;
+  }
+
   &:nth-of-type(1) {
-      padding-top: 6rem;
+    padding-top: 6rem;
+
+    @media only screen and (min-width: 900px) {
+      padding-top: 3.5rem;
+    }
   }
 
   &:nth-of-type(3) {
     padding-bottom: 0;
-}
+  }
 
   &__img-container {
     height: 8rem;
@@ -42,6 +61,6 @@
   &__job-title {
     color: $grayish-blue;
     font-size: 1.4rem;
-    padding-top: .8rem;
+    padding-top: 0.8rem;
   }
 }
