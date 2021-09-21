@@ -1,18 +1,6 @@
 .header {
   position: relative;
 
-  &__logo-container {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-  }
-
-  &__logo {
-    color: $white;
-    font-weight: 800;
-    font-size: 2.1rem;
-  }
-
   &__heading-container {
     position: absolute;
     top: 15.6rem;
@@ -29,31 +17,58 @@
     height: 10rem;
   }
 
-  // Header nav
+  // // Header nav
 
   &__nav {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    padding: 2rem;
   }
 
-  &__menu-icon-container {
-    position: absolute;
-    top: 2rem;
-    right: 3rem;
+  &__top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    color: $white;
+    font-weight: 800;
+    font-size: 2.1rem;
   }
 
   &__menu-icon {
     width: 2.1rem;
+    opacity: .6;
   }
 
   &__nav-list {
     list-style: none;
     background-color: $white;
+    margin-top: 5.5rem;
+    padding: 3rem 0;
+    position: relative;
+    display: none;
+  }
+
+  &__nav-list::before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-bottom: 2.5rem solid $white; 
+    border-left: 2.2rem solid transparent;
     position: absolute;
-    top: 20rem;
-    width: calc(100% - 5rem);
-    margin: 0 ;
+    top: -2.5rem;
+    right: 0;
   }
 
   &__nav-item {
+    padding: 2rem 0;
+
+    &:last-of-type {
+    padding: 3.5rem 0 2.5rem 0;
+    }
   }
 
   &__nav-link {
