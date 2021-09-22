@@ -46,16 +46,18 @@
   z-index: -1;
   border-radius: 30rem;
 
-  &--yellow {
-    background-color: $yellow;
+  &--yellow,
+  &--soft-red {
     opacity: 0.5;
     transition: all 0.2s;
   }
 
+  &--yellow {
+    background-color: $yellow;
+  }
+
   &--soft-red {
     background-color: $soft-red;
-    opacity: 0.5;
-    transition: all 0.2s;
   }
 }
 
@@ -63,6 +65,8 @@
 .article__learn-more-container:hover .under-line--soft-red {
   opacity: 1;
 }
+
+// Article placing
 
 .transform-your-brand {
   @media only screen and (min-width: 650px) {

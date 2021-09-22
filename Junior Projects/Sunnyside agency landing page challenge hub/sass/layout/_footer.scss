@@ -1,0 +1,64 @@
+.footer {
+  background-color: #90d4c5;
+  color: #2d7466;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0 8rem 0;
+
+  @media only screen and (min-width: 650px) {
+    grid-column: 1 / -1;
+  }
+
+  &__logo {
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+
+  // Footer nav
+
+  &__nav-list,
+  &__social-icons {
+    display: flex;
+    list-style: none;
+  }
+
+  &__nav-link,
+  &__social-link {
+    color: $dark-moderate-cyan;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0 7rem 0;
+  }
+
+  &__nav-item {
+    padding: 0 2.5rem;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: hsla(168, 44%, 32%, 0.7);
+  }
+
+  &__social-icon {
+    padding: 0 1rem;
+  }
+
+  &__nav-link,
+  &__social-icon {
+    list-style: none;
+  }
+
+  &__social-link {
+    color: #2d7466;
+    font-size: 2rem;
+  }
+}
