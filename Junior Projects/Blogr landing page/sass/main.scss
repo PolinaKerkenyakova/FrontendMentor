@@ -2,6 +2,9 @@
 
 @import "base/base", "base/typography", "base/utilities";
 
+@import "components/buttons";
+
+@import "layout/art-infrastructure-section", "layout/footer", "layout/future-design-section", "layout/header";
 
 @import "pages/home";
 

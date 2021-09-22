@@ -1,0 +1,22 @@
+.art-infrastructure {
+    background-image: linear-gradient(to bottom right, $very-dark-gray-blue, $very-dark-desaturated-blue);
+    position: relative;
+
+    &__wrapper {
+        overflow: hidden;
+    }
+
+    &__bg-container {
+        position: relative;
+    }
+
+    &__bg {
+        width: 100%;
+        position: absolute;
+        top: -30%;
+    }
+
+    &__phones-img-container {
+        
+    }
+}
