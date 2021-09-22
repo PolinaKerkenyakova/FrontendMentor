@@ -1,0 +1,11 @@
+{
+  "name": "blogr-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:styles/styles.css"
+  },
+  "author": "Polina Kerkenyakova",
+  "license": "ISC"
+}
