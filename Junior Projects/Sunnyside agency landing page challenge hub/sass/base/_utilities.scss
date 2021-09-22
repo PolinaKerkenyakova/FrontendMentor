@@ -6,6 +6,11 @@
   color: $dark-blue;
 }
 
-.text--dark {
+.text--trans-dark-to-light {
   color: $very-dark-desaturated-blue !important;
+  transition: color .2s;
+
+  &:hover {
+    color: $white !important;
+  }
 }

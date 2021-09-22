@@ -45,27 +45,34 @@
   top: 1.4rem;
   z-index: -1;
   border-radius: 30rem;
-  opacity: 25%;
 
   &--yellow {
     background-color: $yellow;
+    opacity: 0.5;
+    transition: all 0.2s;
   }
 
   &--soft-red {
     background-color: $soft-red;
+    opacity: 0.5;
+    transition: all 0.2s;
   }
+}
+
+.article__learn-more-container:hover .under-line--yellow,
+.article__learn-more-container:hover .under-line--soft-red {
+  opacity: 1;
 }
 
 .transform-your-brand {
   @media only screen and (min-width: 650px) {
-    grid-column:  1 / span 2;
+    grid-column: 1 / span 2;
     grid-row: 2 / 3;
   }
 }
 
 .stand-out {
   @media only screen and (min-width: 650px) {
-    grid-column:  3 / span 2;
-    // grid-row: 2 / 3;
+    grid-column: 3 / span 2;
   }
 }

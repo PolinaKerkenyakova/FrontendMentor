@@ -72,8 +72,12 @@ h4 {
   color: #19536b;
 }
 
-.text--dark {
+.text--trans-dark-to-light {
   color: #23303e !important;
+  transition: color 0.2s;
+}
+.text--trans-dark-to-light:hover {
+  color: white !important;
 }
 
 .article {
@@ -121,13 +125,21 @@ h4 {
   top: 1.4rem;
   z-index: -1;
   border-radius: 30rem;
-  opacity: 25%;
 }
 .under-line--yellow {
   background-color: #fad400;
+  opacity: 0.5;
+  transition: all 0.2s;
 }
 .under-line--soft-red {
   background-color: #fe7867;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.article__learn-more-container:hover .under-line--yellow,
+.article__learn-more-container:hover .under-line--soft-red {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 650px) {
@@ -173,14 +185,31 @@ h4 {
 }
 @media only screen and (min-width: 750px) {
   .poster__text-container {
-    width: auto;
     bottom: -1rem;
   }
 }
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 1000px) {
   .poster__text-container {
-    width: auto;
+    width: 100%;
     bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .poster__text-container {
+    width: 100%;
+    bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .poster__text-container {
+    width: 100%;
+    bottom: 7rem;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .poster__text-container {
+    width: 100%;
+    bottom: 12rem;
   }
 }
 .poster__heading {
@@ -413,6 +442,10 @@ h4 {
   .header__nav-item:last-of-type {
     background-color: white;
     margin-left: 3.5rem;
+    transition: background-color 0.2s;
+  }
+  .header__nav-item:last-of-type:hover {
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -450,6 +483,10 @@ h4 {
 }
 .footer__nav-link, .footer__social-link {
   color: #458c7e;
+  transition: all 0.2s;
+}
+.footer__nav-link:hover, .footer__social-link:hover {
+  color: white;
 }
 .footer__nav-list {
   display: flex;
@@ -474,6 +511,9 @@ h4 {
   font-size: 2rem;
 }
 
+.page-wrapper {
+  overflow: hidden;
+}
 @media only screen and (min-width: 650px) {
   .page-wrapper {
     display: grid;
